@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Todo App</title>
+  </head>
+  <body>
+<h1 class="title">Todo List</h1>
+<div class="input-list">
+    <label for="thingTodo" class="label"></label>
+      <input type="text" id="thingTodo" placeholder="enter list item" size="50">
+    <br><br>
+      <input type="button" id="submit" value="submit"><input type="button" id="clearItem"  value="clear list">
+</div>
+<div class="app-body">
+ 
+  <div class="undone">
+
+    <ol>
+      <!-- items will appear here -->
+    </ol>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="todo.js"></script>
+</body>
+</html>
