@@ -1,5 +1,5 @@
 # frontendChallenge-TodoListApp
 ************
-basic todo lost web/app for JScodeChallenege
+basic todo list website/app for JScodeChallenege feb,2021.
 version 1.
 ************
