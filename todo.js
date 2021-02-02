@@ -1,10 +1,18 @@
 var level = 0;
 $("#submit").click(function(){  
 level++;
- //gets the input element  with the submit id
-var item = $("#thingTodo").val();  //stores the value  into the input
-$("ol").append("<li class="+"toDelete"+level+">"+item+" <button onclick="+"deleteItem("+level+")"+">done</button></li>"); //appends the value into an ordered list
-});
+var todoInput = $("#thingTodo");
+var item = todoInput.val();
+
+if(item != null && item !=""){
+    
+$("ol").append("<li class="+"toDelete"+level+">"+item+" <button class="+"btn"+" onclick="+"deleteItem("+level+")"+">X</button></li>"); //appends the value into an ordered lis
+$("li").addClass("container-fluid");
+$("#thingTodo").val("");
+}
+else{ alert("Hey there, you did'nt add an item to your list");}
+
+});  
 
 $("#clearItem").click(function(){
     $("li").remove();
@@ -13,3 +21,4 @@ $("#clearItem").click(function(){
 function deleteItem(level){
     $(".toDelete"+level).remove();
 }
+ 
